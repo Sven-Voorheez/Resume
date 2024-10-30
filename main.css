@@ -1,0 +1,370 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.block_1 {
+    background-color: rgb(78, 160, 254);
+    box-shadow: 10px 0px 10px rgba(0,0,0,0.35);
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+.block_1:hover {
+    transform: translateX(7px);
+}
+.block_2 {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    z-index: 0;
+}
+.img_1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.lastname {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact, .plus_info {
+    margin-top: 25px;
+}
+
+.contact_item, .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact_icons, .aandq {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact_more, .skills, .qualities {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.plus_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.achievements, .quality {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievements:hover, .quality:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.a_h3, .q_h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+
+.who {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.exp, .edu {
+    margin-top: 20px;
+}
+
+.experience, .education {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.img_exp, .edu_img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.exp_title, .edu_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.exp_date, .edu_date {
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: rgb(0, 170, 255);
+}
+
+.exp_more, .edu_faculty {
+    margin: 0;
+}
+.edu_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edu_item {
+    padding: 10px;
+    border-left: 4px solid rgb(78, 160, 254);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.edu_item p {
+    margin: 5px 0;
+}
+
+@media(max-width: 768px){
+    .name{
+        font-size: 25px;
+    }
+    .contact_more{
+        font-size: 17px;
+    }
+    .skills{
+        font-size: 17px;
+    }
+    .qualities{
+        font-size: 17px;
+        
+    }
+    .plus_info {
+        
+        
+        align-items: center;
+    }
+}
+
+
+
+@media(max-width: 600px){
+    .name{
+        font-size: 17px;
+    }
+    .contact_more{
+        font-size: 10px;
+    }
+    .skills{
+        font-size: 10px;
+    }
+    .qualities{
+        font-size: 10px;
+        
+    }
+    .plus_info {
+        
+        
+        align-items: center;
+    }
+    .who{
+        font-size: 17px;
+    }
+    .exp_more{
+        font-size: 12px;
+    }
+    .exp_date{
+        font-size: 13px;
+    }
+    .edu_name{
+        font-size: 13px;
+    }
+    .edu_date{
+        font-size: 14px;
+    }
+    .edu_faculty{
+        font-size: 13px;
+    }
+    .edu_title{
+        font-size: 15px;
+    }
+    .exp_title{
+        font-size: 15px;
+    }
+    .img_exp{
+        width: 20px;
+        height: 23px;
+    }
+}
+
+@media(max-width: 425px){
+    .plus_info {
+        
+        
+        align-items: center;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .contact_more{
+        font-size: 9px;
+    }
+    .skills{
+        font-size: 9px;
+    }
+    .qualities{
+        font-size: 9px;
+        
+    }
+    .who{
+        font-size: 16px;
+    }
+    .exp_more{
+        font-size: 9px;
+    }
+    .exp_date{
+        font-size: 11px;
+    }
+    .edu_name{
+        font-size: 11px;
+    }
+    .edu_date{
+        font-size: 12px;
+    }
+    .edu_faculty{
+        font-size: 11px;
+    }
+    .edu_title{
+        font-size: 14px;
+    }
+    .exp_title{
+        font-size: 14px;
+    }
+    .img_exp{
+        width: 18px;
+        height: 21px;
+    }
+    .contact{
+        justify-content: center;
+        align-items: center;
+    }
+    .img_1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        
+        
+    }
+    .lastname{
+        font-size: 13px;
+    }
+    .a_h3{
+        font-size: 13px;
+    }
+
+    .q_h3{
+        font-size: 13px; 
+    }
+}
+
+
+@media(max-width: 375px){
+    .plus_info {
+        
+        
+        align-items: center;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .contact_more{
+        font-size: 8px;
+    }
+    .skills{
+        font-size: 9px;
+    }
+    .qualities{
+        font-size: 9px;
+        
+    }
+    .who{
+        font-size: 15px;
+    }
+    .exp_more{
+        font-size: 10px;
+    }
+    .exp_date{
+        font-size: 10px;
+    }
+    .edu_name{
+        font-size: 10px;
+    }
+    .edu_date{
+        font-size: 10px;
+    }
+    .edu_faculty{
+        font-size: 10px;
+    }
+    .edu_title{
+        font-size: 11px;
+    }
+    .exp_title{
+        font-size: 11px;
+    }
+    .img_exp{
+        width: 12px;
+        height: 15px;
+    }
+    .contact{
+        justify-content: center;
+        align-items: center;
+    }
+    .img_1 {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        
+        
+    }
+    .a_h3{
+        font-size: 13px;
+    }
+
+    .q_h3{
+        font-size: 13px; 
+    }
+}
+
